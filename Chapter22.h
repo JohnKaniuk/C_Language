@@ -33,6 +33,7 @@ int fileOpen()
 
 }
 
+/*/
 int fileCopy()
 {
 	char copyHolder[45];
@@ -76,10 +77,7 @@ int fileCopy()
 	{
 		printf("%c", c);
 		c = fgetc(f1ptr);
-		
-		//copy each character into placeholder one by one
-		copyHolder[ctr] = c;
-		ctr++;
+	
 	}
 	fclose(f1ptr);
 
@@ -122,8 +120,75 @@ int fileCopy()
 
 }
 
+/*/
 
 
 
 
 
+
+
+//int fileCopy(FILE* sourceFile, FILE* destFile);
+
+int moveData()
+{
+	FILE* sourceFile;
+	FILE* destFile;
+
+	char sourcePath[100];
+	char destpath[100];
+	char ch, ch2;
+	
+	
+
+	printf("Enter name for source file\n");
+	scanf("%s", sourcePath);
+
+	printf("Enter name for destination file\n");
+	scanf("%s", destpath);
+
+	sourceFile = fopen(sourcePath, "w+");
+	destFile = fopen(destpath, "w+");
+
+	if (sourcePath == NULL || destpath == NULL)
+	{
+		printf("Unable to open these files");
+		exit(0);
+	}
+	
+	fprintf(sourceFile, "This is the content\0");
+
+	//copy file contents character by character
+
+	ch = fgetc(sourceFile);
+
+	while (ch != EOF)
+	{
+		//write to destination file
+		fputc(ch, destFile);
+
+		//Get next character
+		ch = fgetc(sourceFile);
+
+	}
+
+	fclose(sourceFile);
+	fclose(destFile);
+
+
+	//open for reading
+	destFile = fopen(destpath, "r");
+	
+	//print content from destination file
+	printf("\nThis is printing from the destination file.\n");
+	ch2 = fgetc(destFile);
+	while (ch2 != EOF)
+	{
+		printf("%c", ch2);
+		ch2 = fgetc(destFile);
+
+	}
+	fclose(destFile);
+	return 0;
+
+}

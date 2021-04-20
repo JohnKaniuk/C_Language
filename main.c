@@ -13,7 +13,7 @@
 int main()
 {	
 	// Structure Pointer and function
-		fileCopy();
+		moveData();
 
 		
 	//person p1 = { "Bob", "Smith", 55, "123 Test Street" };

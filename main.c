@@ -7,13 +7,14 @@
 //#include "chapter19.h"//
 //#include "Chapter20.h"//
 //#include "Chapter21.h"//
-#include "Chapter22.h"
+//#include "Chapter22.h"//
+#include "RandomNum.h"
 
 
 int main()
 {	
 	// Structure Pointer and function
-		moveData();
+		mainFunc();
 
 		
 	//person p1 = { "Bob", "Smith", 55, "123 Test Street" };

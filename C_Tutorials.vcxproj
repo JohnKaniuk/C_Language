@@ -150,6 +150,7 @@
     <ClInclude Include="Chapter21.h" />
     <ClInclude Include="Chapter22.h" />
     <ClInclude Include="RandomNum.h" />
+    <ClInclude Include="RockPaperScissors.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -8,13 +8,14 @@
 //#include "Chapter20.h"//
 //#include "Chapter21.h"//
 //#include "Chapter22.h"//
-#include "RandomNum.h"
+//#include "RandomNum.h"//
+#include "RockPaperScissors.h"
 
 
 int main()
 {	
 	// Structure Pointer and function
-		mainFunc();
+		rockPaperScissors();
 
 		
 	//person p1 = { "Bob", "Smith", 55, "123 Test Street" };

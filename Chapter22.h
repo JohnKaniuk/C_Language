@@ -164,6 +164,7 @@ int moveData()
 
 	while (ch != EOF)
 	{
+
 		//write to destination file
 		fputc(ch, destFile);
 

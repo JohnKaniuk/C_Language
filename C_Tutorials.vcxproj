@@ -149,6 +149,7 @@
     <ClInclude Include="Chapter20.h" />
     <ClInclude Include="Chapter21.h" />
     <ClInclude Include="Chapter22.h" />
+    <ClInclude Include="DigitalClock.h" />
     <ClInclude Include="RandomNum.h" />
     <ClInclude Include="RockPaperScissors.h" />
   </ItemGroup>

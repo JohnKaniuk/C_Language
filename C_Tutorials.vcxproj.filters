@@ -42,6 +42,9 @@
     <ClInclude Include="RockPaperScissors.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DigitalClock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
